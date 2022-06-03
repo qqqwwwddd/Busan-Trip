@@ -4,7 +4,7 @@
     top: 67px;
     list-style: none;
     text-align: start;
-    margin-right: 20px;
+    right: 13%;
 }
 
 .services-submenu li {
@@ -13,7 +13,7 @@
     list-style: none;
 }
 
-.services-submenu li a:hover {
+.services-submenu li :hover {
     background: rgb(0, 175, 175);
 }
 
@@ -27,11 +27,12 @@
     height: 100%;
     text-decoration: none;
     color: white;
-    padding: 16px;
+    /* padding: 10px; */
     margin: 0;
 }
 .submenu-item:hover {
     background: rgb(0, 175, 175);
+    width: 10rem;
 }
 .mainimg {
     width: 80px;

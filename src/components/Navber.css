@@ -46,3 +46,7 @@
 .nav-item p:hover {
     background: rgb(0, 212, 212);
 }
+.mainimg {
+    width: 50px;
+    height: 30px;
+}

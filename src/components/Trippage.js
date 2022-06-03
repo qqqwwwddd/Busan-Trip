@@ -1,12 +1,13 @@
 import place from "../api/mock.json";
 import "../App.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Navbar from "./Navber";
+import Footer from "./Footer";
 const TripPage = () => {
     const gugunParam = useParams();
-    console.log(gugunParam.GUGUN_NM);
+    // console.log(gugunParam.GUGUN_NM);
     const items = place.getAttractionKr.item;
-    // console.log(items);
+
     return (
         <div>
             <Navbar></Navbar>
@@ -15,8 +16,10 @@ const TripPage = () => {
                     gugunParam.GUGUN_NM === item.GUGUN_NM ? (
                         <div key={item.UC_SEQ}>
                             <div className="IMG_list">
-                                <img src={item.MAIN_IMG_THUMB} />
-                                <p className="IMG_title">{item.TITLE}</p>
+                                <Link to={`/detailNu/${item.UC_SEQ}`}>
+                                    <img src={item.MAIN_IMG_THUMB} />
+                                    <p className="IMG_title">{item.TITLE}</p>
+                                </Link>
                             </div>
                         </div>
                     ) : (
@@ -24,6 +27,7 @@ const TripPage = () => {
                     )
                 )}
             </div>
+            <Footer></Footer>
         </div>
     );
 };

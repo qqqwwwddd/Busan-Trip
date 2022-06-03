@@ -1,10 +1,11 @@
+body {
+    background-color: rgb(229, 240, 240);
+}
 .body-wrapper {
     position: relative;
-    /* display: block; */
     position: static;
-    border: 2px dashed salmon;
+    border: 2px;
     text-align: center;
-    /* margin-top: 30px; */
 }
 
 .div {
@@ -12,28 +13,32 @@
     display: flex;
 }
 .main-img {
-    /* clear: both; */
     justify-content: center;
     object-fit: fill;
     width: 100%;
-    /* height: 100%; */
-    /* width: 100vw; */
 }
-/* .container1 {
-      position: static;
-      border: 2px dashed salmon;
-      display: flex;
-      text-align: center;
-      margin-top: 30px;
-      /* float: left; */
+
 .image1 {
     border: 2px solid darkblue;
 }
 .img-flex {
     display: flex;
-    background-color: rgb(66, 168, 166);
+
+    background-color: rgb(229, 240, 240);
+    margin-top: 10px;
     justify-content: center;
 }
 .ListImg {
     margin-right: 50px;
+    padding: 10px;
+}
+
+.List {
+    background-color: white;
+    border-radius: 50px;
+}
+.ListImg p {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(42, 115, 157);
 }

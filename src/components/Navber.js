@@ -12,12 +12,9 @@ function Navbar() {
     return (
         <>
             <nav className="navbar">
-                {/* <Link to="/" className="navbar-logo"> */}
                 <Link to="/">
                     <img className="mainimg" src={ing} alt="mainImg" />
                 </Link>
-
-                {/* </Link> */}
                 <ul className="nav-items">
                     {navItems.map((item) => {
                         if (item.title === "구별로 보기") {
@@ -35,7 +32,7 @@ function Navbar() {
                         }
                         return (
                             <li key={item.id} className={item.cName}>
-                                <p to={item.path}>{item.title}</p>
+                                <Link to={item.path}> {item.title} </Link>
                             </li>
                         );
                     })}
